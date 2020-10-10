@@ -215,11 +215,11 @@ inline data into large objects (lots of duplication and copying).
 
 The "recommended" IPLD format (currently DAG-CBOR) needs to support *at a minimum*:
 
-* 32/64 bit integers without losing information.
+* 32/64 bit signed-integers without losing information.
 * 32/64 bit floats without losing information.
-* Unicode strings.
+* Utf8 encoded strings, aka text-strings.
 * Binary strings.
-* Objects (with string keys, at least).
+* Objects (with text-string as keys, at least).
 * Arrays.
 * Booleans.
 * A bottom type (null).
