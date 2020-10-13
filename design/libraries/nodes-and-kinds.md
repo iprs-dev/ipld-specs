@@ -78,7 +78,8 @@ Node
 
 `Node` is a monomorphized interface for handling data -- in other words,
 we make all data look and act like a `Node`, so that we can write all of our
-functions against the `Node` interface, and have that work for any sort of data.
+functions against the `Node` interface, and have that work for any sort of data,
+while data itself might be a value of one-or-more concrete types.
 
 `Node` has functions for examining any of the
 [Data Model Kinds](../../data-model-layer/data-model.md#kinds).
