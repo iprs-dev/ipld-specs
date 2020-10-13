@@ -172,7 +172,7 @@ This is the case because implicits do not change the cardinality of the type
 (see the [Understanding Cardinality](#understanding-cardinality) table
 later in this document for more examples of what this means, and how it
 compares in semantics with the other modifiers).
-As a representational rather than type definition feature, the syntatic
+As a representational rather than type definition feature, the syntactic
 position for an implicit declaration is on the end of the line declaring a
 field, and in parenthesis (the same as where the 'rename' and other
 representation-level directives can be found).
@@ -205,7 +205,7 @@ Use `implicit` when the absence of a value should be treated as another
 value that fits unambiguously into your domain; use `optional` when there's
 no such in-domain value.
 
-For example, if you have some integer field, and if `0` is distinctive from
+For example, if you have some integer field, and if `0` is distinctive
 from the field being absent, use `optional`.
 If `0` (or some other value of your choice like `-1`) can be used as a
 sentinel value in your application logic, while not being serialized as such,
