@@ -45,11 +45,12 @@ Your IPLD library should have two cornerstone types:
 1. `Node`;
 2. `Kind`.
 
-`Node` should be an interface -- the membership should be open
-(aka, it should be possible for other packages to implement it).
+`Node` shall be an _interface_ or _trait_ or generally speaking _behaviour_ --
+the membership should be open (aka, it should be possible for other packages
+to implement it).
 
-`Kind` should be an enumeration -- a fixed set of named members,
-which should not be extendable.
+`Kind` shall be an _enumeration_ -- a fixed set of named members,
+and shall not be extendable.
 
 
 Kind
