@@ -30,7 +30,7 @@ we hope that they're close enough to be meaningful to a thoughtful reader.)
 
 We expect that common concepts for IPLD libraries will emerge across many languages,
 and hope that some vocabulary for these concepts is something we can share.
-Loosely and untyped languages may need to interpret these guidelines
+Loosely any untyped languages may need to interpret these guidelines
 appropriately while extracting the key concepts; but even among languages with
 stricter concepts of compile-time type checking, the meaning of "interface"
 can vary greatly -- _all_ readers will need to be ready to use their best judgement.
@@ -45,11 +45,12 @@ Your IPLD library should have two cornerstone types:
 1. `Node`;
 2. `Kind`.
 
-`Node` should be an interface -- the membership should be open
-(aka, it should be possible for other packages to implement it).
+`Node` shall be an _interface_ or _trait_ or generally speaking _behaviour_ --
+the membership should be open (aka, it should be possible for other packages
+to implement it).
 
-`Kind` should be an enumeration -- a fixed set of named members,
-which should not be extendable.
+`Kind` shall be an _enumeration_ -- a fixed set of named members,
+and shall not be extendable.
 
 
 Kind
@@ -77,7 +78,8 @@ Node
 
 `Node` is a monomorphized interface for handling data -- in other words,
 we make all data look and act like a `Node`, so that we can write all of our
-functions against the `Node` interface, and have that work for any sort of data.
+functions against the `Node` interface, and have that work for any sort of data,
+while data itself might be a value of one-or-more concrete types.
 
 `Node` has functions for examining any of the
 [Data Model Kinds](../../data-model-layer/data-model.md#kinds).
