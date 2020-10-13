@@ -30,7 +30,7 @@ we hope that they're close enough to be meaningful to a thoughtful reader.)
 
 We expect that common concepts for IPLD libraries will emerge across many languages,
 and hope that some vocabulary for these concepts is something we can share.
-Loosely and untyped languages may need to interpret these guidelines
+Loosely any untyped languages may need to interpret these guidelines
 appropriately while extracting the key concepts; but even among languages with
 stricter concepts of compile-time type checking, the meaning of "interface"
 can vary greatly -- _all_ readers will need to be ready to use their best judgement.
